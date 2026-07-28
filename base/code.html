@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="pt-BR" class="light" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#00210b",
+                    "primary-container": "#2d6a3e",
+                    "secondary-fixed-dim": "#c9c6bd",
+                    "on-primary-fixed-variant": "#115228",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#404940",
+                    "tertiary-fixed": "#f5e0ba",
+                    "secondary": "#5f5f57",
+                    "inverse-surface": "#2f312e",
+                    "on-secondary-container": "#64635b",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f1f1ec",
+                    "on-secondary-fixed-variant": "#484740",
+                    "on-primary-container": "#a6e8b0",
+                    "on-tertiary-fixed": "#241a03",
+                    "surface-container-high": "#e8e8e3",
+                    "on-tertiary-fixed-variant": "#534529",
+                    "on-tertiary-container": "#ead5af",
+                    "surface": "#fafaf4",
+                    "surface-tint": "#2d6a3e",
+                    "on-background": "#1a1c19",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f4f4ee",
+                    "background": "#fafaf4",
+                    "secondary-container": "#e2e0d6",
+                    "outline": "#717970",
+                    "surface-bright": "#fafaf4",
+                    "on-surface": "#1a1c19",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#d8c49f",
+                    "tertiary": "#524528",
+                    "primary-fixed": "#b0f2ba",
+                    "surface-container": "#eeeee9",
+                    "inverse-primary": "#95d59f",
+                    "surface-container-highest": "#e3e3de",
+                    "tertiary-container": "#6b5c3e",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#1c1c16",
+                    "surface-dim": "#dadad5",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#95d59f",
+                    "surface-variant": "#e3e3de",
+                    "secondary-fixed": "#e5e2d9",
+                    "primary": "#115128",
+                    "outline-variant": "#c0c9be",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Bodoni Moda"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Bodoni Moda"],
+                    "headline-lg": ["Bodoni Moda"],
+                    "headline-md": ["Bodoni Moda"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="font-body-md text-on-surface">
+<!-- TopAppBar Navigation -->
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-outline-variant transition-all duration-300 bg-surface/90" id="main-header">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+<span class="font-display-lg text-headline-sm tracking-widest text-primary">DONA MARIA</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a href="#stay" class="font-label-lg text-primary uppercase transition-colors duration-300 hover:text-primary-container">Stay</a>
+<a href="#explore" class="font-label-lg text-secondary uppercase transition-colors duration-300 hover:text-primary-container">Explore</a>
+<a href="#book" class="font-label-lg text-secondary uppercase transition-colors duration-300 hover:text-primary-container">Book</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-original-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden transition-all duration-1000 opacity-100 translate-y-0">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110" data-alt="A cinematic, wide-angle shot of a luxury rustic bedroom in a boutique mountain inn. Warm morning sunlight filters through large wooden windows, illuminating a plush bed with linen sheets, artisanal wooden furniture, and a stone fireplace. The surrounding environment is a lush, misty green forest. The color palette is dominated by deep forest greens and soft, creamy beige tones, creating a mood of high-end serenity and organic sophistication." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDn_WlXEIeqYzim6ZF-2BXJDWh168K_avtop-m_zU5MjHMRZFMW83YhOYW1lHtfiDErq94rtqdmvaCeVTeN4SAE42BgNrJD7Hwt7IA8t9YIQeIio2MguYH-q0Kq1GxopGKstzeOXL3au_QMuJVgKwFTzllXoYCF7muoB8bOuGox9WLs-ncMbref66w-e_Qmr5oQam9wTXzWRmHOeMs9z5HmKkJo7g8m3v5DTax-SbC9l3o4iNBOXhxr')">
+</div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl">
+<h1 class="font-display-lg text-display-lg text-surface-container-lowest mb-6 leading-tight">
+                Sinta o aconchego da natureza.
+            </h1>
+<p class="font-body-lg text-body-lg text-secondary-container mb-10 max-w-2xl mx-auto">
+                Um refúgio de paz e sofisticação no coração da serra.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary text-surface px-8 py-4 rounded-lg font-label-lg uppercase tracking-widest hover:bg-primary-container transition-all shadow-lg" href="#book">
+                    Reservar Agora
+                </a>
+<a class="border border-surface text-surface px-8 py-4 rounded-lg font-label-lg uppercase tracking-widest hover:bg-surface/10 transition-all" href="#explore">
+                    Conheça a Pousada
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-surface text-4xl" data-original-icon="keyboard_double_arrow_down">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Nossas Acomodações - Bento Grid -->
+<section class="py-section-gap px-margin-mobile max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="stay">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Nossas Acomodações</h2>
+<div class="w-24 h-px bg-tertiary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Room Card 1: Master Suite -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[500px] border border-outline-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An expansive master suite featuring a private balcony overlooking the Atlantic Forest. The interior shows a mix of polished concrete floors and reclaimed wood beams, with a king-sized bed draped in heavy cotton. Soft ambient lighting creates a cozy yet upscale atmosphere. The style is sophisticated rusticity, using natural materials in a contemporary, minimalist way, perfectly aligned with the forest green and beige color scheme." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCC6-JMfIld619UKgGRTc0HTlGSG3nvzU6mKJszNgToKeitG5hhWCSTkWSs2L826CWb3h449eLWWFrzTW3OxppPi1guIReBA4aaEHRd6wsZN5ehFfijOAVPjFBY0Jut3mdBxVX5upi02GNTtv6UomqbinCHUHhUElzI06b8psbU0y3T_4Qbc_erOpL3EDfAPNWwdAD1BS4infKk5jlviAqJWS4DmV1vGaEJq_6BZP00sQx8ZLES9alQ')"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-primary/90 to-transparent text-surface">
+<h3 class="font-headline-md text-headline-md mb-2">Suíte Master</h3>
+<p class="font-body-md opacity-90 mb-4 max-w-md">Privacidade total com vista panorâmica para o vale e lareira privativa.</p>
+<span class="font-label-lg border-b border-surface/50 pb-1 cursor-pointer hover:border-surface transition-all">Ver Detalhes</span>
+</div>
+</div>
+<!-- Room Card 2: Deluxe Room -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl h-[500px] border border-outline-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A cozy deluxe guest room featuring warm stone walls and local artisanal decor. A large window frames a vibrant garden view. The lighting is soft and golden, highlighting the tactile textures of the woven rugs and wooden furniture. The aesthetic is warm and inviting, emphasizing high-quality natural materials in a luxury retreat setting with forest green accents." style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-primary/90 to-transparent text-surface">
+<h3 class="font-headline-sm text-headline-sm mb-2">Quarto Deluxe</h3>
+<p class="font-body-md opacity-90 mb-4">Conforto essencial com toques de artesanato local.</p>
+<span class="font-label-lg border-b border-surface/50 pb-1 cursor-pointer hover:border-surface transition-all">Ver Detalhes</span>
+</div>
+</div>
+<!-- Room Card 3: Garden Loft -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] border border-outline-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A modern loft-style room integrated with a private garden. Floor-to-ceiling glass doors open to a secluded patio surrounded by tropical ferns. The interior is minimal, featuring a reading nook and a small kitchenette. The color palette utilizes sophisticated forest green for the walls and cream beige for the textiles, creating a serene, immersive nature experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9VrH_F49OO7_-7IlKKvs2IB0t_fQ8aXcg-z3D6Idj08Y5zwRVuq8sVAyo14n7tCAQ5eQihFz63WvDTaQjH_m8Ybw4AvcsJ2NugRZcQYT_5w0Gp9JBWQL1PQfO163rggx90RwyHwgL185t3_A9cDmuu4ecQI_l_5MyzQhkO2Dht_AFVa-FmhbRpHm4D5Lw4jCT3ZNSaZU7dGDm_qzBjh-wPUb3hYUWC4wNnTBnOC8sBDMnVRTYVNoP')"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-primary/90 to-transparent text-surface">
+<h3 class="font-headline-sm text-headline-sm mb-2">Loft Jardim</h3>
+<p class="font-body-md opacity-90 mb-4">Um refúgio integrado à flora exuberante da serra.</p>
+<span class="font-label-lg border-b border-surface/50 pb-1 cursor-pointer hover:border-surface transition-all">Ver Detalhes</span>
+</div>
+</div>
+<!-- Room Card 4: Chalé Familiar -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[400px] border border-outline-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A spacious two-bedroom family chalet with a large living area and a wrap-around porch. The architecture features exposed stone and dark wood, with high-end furniture designed for comfort and durability. The lighting is bright and natural. The overall feel is one of upscale family tradition and calm, using a palette of greens, stones, and creams to ground the design in its natural surroundings." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZvXk1ycncM3m4Bhk-DSi4_x7QVfydi20dc6V30HdJBqPBoithuRkCHhoO_PSekyoG_F7OYhIKl1lDsYlN4TxbiHUrmQucNAANWS1Kq6c53I293SJ2PmnRec8TBgtlBNdqYrmABPhfUyYGrOaawTqzolGyuD3M5yqrw-wDABc2mOz3NOMUqFDPUGElEV91EPyqWENIWKSW3kEN1hnJ-pqzzCBpF8EVDjml_56zCFiMeXeCR4NyJTV1')"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-primary/90 to-transparent text-surface">
+<h3 class="font-headline-md text-headline-md mb-2">Chalé Familiar</h3>
+<p class="font-body-md opacity-90 mb-4 max-w-md">Espaço generoso para criar memórias inesquecíveis com quem você ama.</p>
+<span class="font-label-lg border-b border-surface/50 pb-1 cursor-pointer hover:border-surface transition-all">Ver Detalhes</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experiência Única -->
+<section class="py-section-gap px-margin-mobile max-w-container-max mx-auto" id="nature-attractions">
+  <div class="text-center mb-16">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">A Magia das Águas</h2>
+    <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Descubra as cachoeiras exuberantes que cercam nossa pousada, o destino favorito de quem busca renovar as energias.</p>
+    <div class="w-24 h-px bg-tertiary-container mx-auto mt-8"></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <div class="group flex flex-col gap-4">
+      <div class="aspect-square overflow-hidden rounded-xl border border-outline-variant">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_WlXEIeqYzim6ZF-2BXJDWh168K_avtop-m_zU5MjHMRZFMW83YhOYW1lHtfiDErq94rtqdmvaCeVTeN4SAE42BgNrJD7Hwt7IA8t9YIQeIio2MguYH-q0Kq1GxopGKstzeOXL3au_QMuJVgKwFTzllXoYCF7muoB8bOuGox9WLs-ncMbref66w-e_Qmr5oQam9wTXzWRmHOeMs9z5HmKkJo7g8m3v5DTax-SbC9l3o4iNBOXhxr" alt="Cachoeira do Catua" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+      </div>
+      <div>
+        <h3 class="font-headline-sm text-primary mb-2">Cachoeira do Catua</h3>
+        <p class="font-body-md text-on-surface-variant">Uma queda d'água cristalina perfeita para um mergulho revigorante ao amanhecer.</p>
+      </div>
+    </div>
+    <div class="group flex flex-col gap-4">
+      <div class="aspect-square overflow-hidden rounded-xl border border-outline-variant">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD52IMTeU_84XxVWFpTPDB4w5lRiAwumZal87ey8gtgZsJ-DF1nnvck_CueXrVbUevzWOeD_9JSPlrZ5jw4HT8ZBVy-XFUbZhoXTy7bBFFR1O0rDGjgAFTdW9-SY03QcYDPqIgIkQaQVX_2DF6F7IuwcZyC85fnoKGAkrmprUaC6gt2aTTbnVwasaPsdyvA9S6f8a_f76vEK1YeAajNj13vcmLxTcerj6LgYDbZ9gPHmXQ_XGVQEtHR" alt="Cachoeira do Engenho" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+      </div>
+      <div>
+        <h3 class="font-headline-sm text-primary mb-2">Cachoeira do Engenho</h3>
+        <p class="font-body-md text-on-surface-variant">Cercada por mata nativa, oferece trilhas leves e um cenário digno de cinema.</p>
+      </div>
+    </div>
+    <div class="group flex flex-col gap-4">
+      <div class="aspect-square overflow-hidden rounded-xl border border-outline-variant">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC6-JMfIld619UKgGRTc0HTlGSG3nvzU6mKJszNgToKeitG5hhWCSTkWSs2L826CWb3h449eLWWFrzTW3OxppPi1guIReBA4aaEHRd6wsZN5ehFfijOAVPjFBY0Jut3mdBxVX5upi02GNTtv6UomqbinCHUHhUElzI06b8psbU0y3T_4Qbc_erOpL3EDfAPNWwdAD1BS4infKk5jlviAqJWS4DmV1vGaEJq_6BZP00sQx8ZLES9alQ" alt="Cachoeira da Canjica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+      </div>
+      <div>
+        <h3 class="font-headline-sm text-primary mb-2">Complexo Aguas Lindas</h3>
+        <p class="font-body-md text-on-surface-variant">Famosa por seu poço profundo e águas calmas, ideal para relaxar e contemplar.</p>
+      </div>
+    </div>
+  </div>
+</section><section class="bg-primary text-surface py-section-gap transition-all duration-1000 opacity-100 translate-y-0" id="explore">
+<div class="max-w-container-max mx-auto px-margin-mobile grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 order-2 lg:order-1">
+<h2 class="font-headline-lg text-headline-lg leading-tight">Experiência Única &amp; Hospitalidade</h2>
+<p class="font-body-lg opacity-80 leading-relaxed">
+                    Comece seu dia com o aroma do café fresco e pães artesanais saindo do forno. Nosso café da manhã é uma celebração dos produtores locais, servido em um terraço com vista para as montanhas.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl">spa</span>
+<div>
+<h4 class="font-label-lg mb-1">Wellness</h4>
+<p class="font-label-sm opacity-70">Massagens relaxantes e terapias naturais sob agendamento.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl">local_dining</span>
+<div>
+<h4 class="font-label-lg mb-1">Gastronomia</h4>
+<p class="font-label-sm opacity-70">Cozinha afetiva com ingredientes orgânicos da nossa horta.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl">eco</span>
+<div>
+<h4 class="font-label-lg mb-1">Sustentabilidade</h4>
+<p class="font-label-sm opacity-70">Respeito total ao ecossistema local em cada detalhe.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl">map</span>
+<div>
+<h4 class="font-label-lg mb-1">Exploração</h4>
+<p class="font-label-sm opacity-70">Trilhas guiadas e roteiros exclusivos pela serra.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="aspect-square rounded-full overflow-hidden border-8 border-surface-container-low/20">
+<div class="w-full h-full bg-cover bg-center" data-alt="A beautifully set outdoor breakfast table on a wooden deck overlooking a misty green valley. The table is filled with artisanal breads, colorful local fruits, fresh coffee in ceramic mugs, and homemade jams. The morning light is soft and diffused. The styling is sophisticated and rustic, highlighting the connection between luxury service and the raw beauty of nature, using the brand's signature green and beige palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD52IMTeU_84XxVWFpTPDB4w5lRiAwumZal87ey8gtgZsJ-DF1nnvck_CueXrVbUevzWOeD_9JSPlrZ5jw4HT8ZBVy-XFUbZhoXTy7bBFFR1O0rDGjgAFTdW9-SY03QcYDPqIgIkQaQVX_2DF6F7IuwcZyC85fnoKGAkrmprUaC6gt2aTTbnVwasaPsdyvA9S6f8a_f76vEK1YeAajNj13vcmLxTcerj6LgYDbZ9gPHmXQ_XGVQEtHR')">
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-6 -left-6 bg-tertiary-fixed text-on-tertiary-fixed p-8 rounded-lg hidden md:block">
+<p class="font-display-lg text-display-lg italic">Maria</p>
+<p class="font-label-lg uppercase tracking-widest opacity-70">Dona da Casa</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reserve sua Estadia -->
+<section class="py-section-gap px-margin-mobile transition-all duration-1000 opacity-100 translate-y-0" id="book">
+<div class="max-w-4xl mx-auto bg-surface-container-high rounded-2xl p-8 md:p-16 text-center border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Pronto para desconectar?</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                Garanta sua reserva com antecedência e desfrute de momentos de tranquilidade absoluta na Pousada Dona Maria.
+            </p>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-secondary px-1 uppercase tracking-wider">Check-in</label>
+<div class="relative">
+<input class="w-full bg-surface border border-outline-variant rounded-lg p-4 focus:ring-primary focus:border-primary" type="date">
+<span class="absolute right-4 top-4 material-symbols-outlined text-outline pointer-events-none">calendar_month</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-secondary px-1 uppercase tracking-wider">Hóspedes</label>
+<div class="relative">
+<select class="w-full bg-surface border border-outline-variant rounded-lg p-4 appearance-none focus:ring-primary focus:border-primary">
+<option>1 Adulto</option>
+<option selected="">2 Adultos</option>
+<option>Família (3+)</option>
+</select>
+<span class="absolute right-4 top-4 material-symbols-outlined text-outline pointer-events-none">group</span>
+</div>
+</div>
+<div class="flex flex-col justify-end">
+<button class="bg-primary text-surface py-4 rounded-lg font-label-lg uppercase tracking-widest hover:scale-105 transition-all shadow-md">
+                        Verificar Disponibilidade
+                    </button>
+</div>
+</form>
+<p class="mt-8 font-label-sm text-secondary italic">
+                * Melhor tarifa garantida para reservas diretas pelo site.
+            </p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest py-16 px-margin-mobile border-t border-outline-variant mb-16 md:mb-0">
+<div class="max-w-container-max mx-auto flex flex-col items-center gap-8">
+<span class="font-display-lg text-headline-md tracking-[0.2em] text-primary">POUSADA DONA MARIA</span>
+<nav class="flex flex-wrap justify-center gap-8">
+<a class="font-label-sm text-secondary hover:text-primary transition-colors" href="#">POLÍTICA DE PRIVACIDADE</a>
+<a class="font-label-sm text-secondary hover:text-primary transition-colors" href="#">TERMOS DE USO</a>
+<a class="font-label-sm text-secondary hover:text-primary transition-colors" href="#">CONTATO</a>
+<a class="font-label-sm text-secondary hover:text-primary transition-colors" href="#">LOCALIZAÇÃO</a>
+</nav>
+<div class="flex gap-6">
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-primary hover:text-surface transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-primary hover:text-surface transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-primary hover:text-surface transition-all" href="#">
+<span class="material-symbols-outlined">call</span>
+</a>
+</div>
+<p class="font-label-sm text-outline uppercase tracking-widest mt-4">
+                © 2024 POUSADA DONA MARIA. TODOS OS DIREITOS RESERVADOS.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface border-t border-outline-variant flex justify-around items-center px-4 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 scale-95 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">bed</span>
+<span class="font-label-sm">Stay</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary px-4 py-1" href="#explore">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-sm">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary px-4 py-1" href="#book">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-label-sm">Book</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary px-4 py-1" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Header scroll behavior
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'bg-surface/95', 'shadow-sm');
+                header.classList.remove('bg-surface/90');
+            } else {
+                header.classList.remove('py-2', 'bg-surface/95', 'shadow-sm');
+                header.classList.add('bg-surface/90');
+            }
+        });
+
+        // Intersection Observer for fade-in effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // Apply fade-in to sections
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+
+</body></html>
