@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { waterfalls } from "@/data/waterfalls";
 import ImagePlaceholder from "./ImagePlaceholder";
 import Reveal from "./Reveal";
@@ -17,8 +18,18 @@ export default function WaterfallsSection() {
       <Reveal as="div" className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
         {waterfalls.map((fall) => (
           <div key={fall.name} className="group flex flex-col gap-4">
-            <div className="aspect-square overflow-hidden rounded-xl border border-outline-variant">
-              <ImagePlaceholder label={fall.name} className="transition-transform duration-700 group-hover:scale-105" />
+            <div className="aspect-square overflow-hidden rounded-xl border border-outline-variant relative">
+              {fall.image ? (
+                <Image
+                  src={fall.image}
+                  alt={fall.name}
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              ) : (
+                <ImagePlaceholder label={fall.name} className="transition-transform duration-700 group-hover:scale-105" />
+              )}
             </div>
             <div>
               <h3 className="font-headline-sm text-headline-sm text-primary mb-2">{fall.name}</h3>

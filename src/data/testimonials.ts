@@ -9,21 +9,21 @@ export type Testimonial = {
 // e GOOGLE_PLACE_ID não estiverem configurados em produção (ver src/lib/reviews.ts).
 export const fallbackTestimonials: Testimonial[] = [
   {
-    author: "Marina T.",
+    author: "Rossi P.",
     rating: 5,
-    text: "A Dona Maria recebe a gente como se fosse da família. O café da manhã sozinho já vale a viagem, e as cachoeiras por perto são um espetáculo.",
-    relativeTime: "há 2 meses",
+    text: "Melhor hospedagem em Campo Alegre. Suítes confortáveis  com cama box e camas de solteiro,  acomodam até 4 pessoas. chuveiro quente. Café da manhã de fazenda.  Receptividade ótima. Dona da Pousada é excepcionalmente atenciosa",
+    relativeTime: "há 3 anos",
   },
   {
-    author: "Carlos E.",
+    author: "Ariovaldo N.",
     rating: 5,
-    text: "Lugar simples, limpo e com um clima gostoso de interior. Voltamos com certeza na próxima folga.",
-    relativeTime: "há 3 meses",
+    text: "A dona Maria e dona Miúda são super agradáveis,  Boa receptividade e bem informadas sobre tudo na região.  Lá é o ponto de partida para lindas cachoeiras e pontos de água quente. Vale a pena conhecer campo Alegre,  município de Paranã To.",
+    relativeTime: "há 6 anos",
   },
   {
-    author: "Juliana R.",
+    author: "Rodrigo G.",
     rating: 5,
-    text: "Fomos em família e as crianças amaram o quintal. A Dona Maria indicou as melhores cachoeiras e ainda preparou um almoço caseiro maravilhoso.",
-    relativeTime: "há 5 meses",
+    text: "Para os visitantes da região baixa da Chapada, a pousada da Dona Maria é sem dúvida uma das melhores opções de estadia. Quartos com banheiro privativo com água quente, ar condicionado, e impecavelmente limpos. Além disso, a Dona Maria oferece um delicioso café da manhã e um jantar muito rico e variado. E para completar, a anfitriã Dona Maria nos acolheu com muito carinho e braços abertos. Com certeza voltaremos para visitar o que faltou!",
+    relativeTime: "há 1 ano",
   },
 ];
