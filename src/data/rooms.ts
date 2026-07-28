@@ -12,79 +12,159 @@ export type Accommodation = {
   gridSpan: "large" | "medium" | "small"; // controla o tamanho do card no bento grid da home
 };
 
+// Política comum a todas as acomodações (repetida em cada longDescription, por decisão do produto):
+// café da manhã incluso, crianças <12 anos pagam 50%, sinal de 50% no ato da reserva,
+// refeições à parte (almoço/jantar self-service R$ 50 ou no quilo R$ 65).
+const POLICY_NOTE =
+  "Café da manhã incluso. Crianças menores de 12 anos pagam 50% do valor. Reservas exigem sinal de 50% no ato. Refeições à parte: almoço/jantar self-service por R$ 50,00 ou no quilo por R$ 65,00.";
+
+const ROOM_PRICE_NOTE =
+  "A diária pode ser reservada como hospedagem compartilhada (R$ 160 por pessoa), hospedagem exclusiva (R$ 180 por pessoa) ou suíte casal fechada (R$ 300).";
+
 export const accommodations: Accommodation[] = [
   {
     slug: "suite-master",
     type: "quarto",
     name: "Suíte Master",
     shortDescription:
-      "O quarto mais espaçoso da casa, com varanda voltada para o quintal e vista das serras ao fundo.",
-    longDescription:
-      "A Suíte Master é o cantinho mais generoso da Pousada Dona Maria: cama de casal ampla, varanda privativa e uma vista que emenda o quintal florido com as serras ao longe. Ideal para quem quer acordar com o barulho dos pássaros e dormir ouvindo o silêncio do distrito.",
-    capacity: "2 a 3 pessoas",
-    amenities: ["Cama king", "Varanda privativa", "Banheiro privativo", "Ventilador de teto", "Frigobar", "Wi-Fi"],
+      "Cama de casal e cama de solteiro em banheiro privativo, para quem busca mais privacidade.",
+    longDescription: `A Suíte Master traz uma cama de casal e uma cama de solteiro, com banheiro privativo — boa opção para casais ou pequenos grupos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    capacity: "Até 3 pessoas",
+    amenities: [
+      "1 cama de casal + 1 cama de solteiro",
+      "Banheiro privativo",
+      "Ventilador de teto",
+      "Café da manhã incluso",
+      "Wi-Fi",
+    ],
     images: [],
-    priceFrom: "a partir de R$ 220/noite",
+    priceFrom: "a partir de R$ 160 por pessoa",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre a Suíte Master e verificar disponibilidade.",
-    gridSpan: "large",
-  },
-  {
-    slug: "quarto-deluxe",
-    type: "quarto",
-    name: "Quarto Deluxe",
-    shortDescription: "Conforto essencial com toques de artesanato local, para uma estadia tranquila.",
-    longDescription:
-      "O Quarto Deluxe traz o essencial pra uma boa estadia, com detalhes de artesanato feito por gente da região. É o quarto mais procurado por quem viaja em dupla e quer só um lugar simples, limpo e aconchegante pra descansar entre uma cachoeira e outra.",
-    capacity: "2 pessoas",
-    amenities: ["Cama de casal", "Banheiro privativo", "Ventilador de teto", "Wi-Fi"],
-    images: [],
-    priceFrom: "a partir de R$ 160/noite",
-    whatsappMessage:
-      "Olá! Gostaria de saber mais sobre o Quarto Deluxe e verificar disponibilidade.",
     gridSpan: "medium",
   },
   {
-    slug: "loft-jardim",
+    slug: "suite-aurora",
     type: "quarto",
-    name: "Loft Jardim",
-    shortDescription: "Um quartinho integrado ao jardim da Dona Maria, com portas para o verde.",
-    longDescription:
-      "O Loft Jardim fica de frente pro jardim que a Dona Maria cuida com carinho todo santo dia. As portas se abrem direto pra área verde — é o quarto preferido de quem viaja sozinho ou quer um cantinho mais reservado pra ler um livro na varandinha.",
-    capacity: "1 a 2 pessoas",
-    amenities: ["Cama de casal", "Varandinha", "Banheiro privativo", "Wi-Fi"],
+    name: "Suíte Aurora",
+    shortDescription:
+      "Cama de casal e duas camas de solteiro, com banheiro privativo — espaço de sobra para a família.",
+    longDescription: `A Suíte Aurora tem uma cama de casal e duas camas de solteiro, com banheiro privativo — cabe bem famílias ou grupos de amigos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    capacity: "Até 4 pessoas",
+    amenities: [
+      "1 cama de casal + 2 camas de solteiro",
+      "Banheiro privativo",
+      "Ventilador de teto",
+      "Café da manhã incluso",
+      "Wi-Fi",
+    ],
     images: [],
-    priceFrom: "a partir de R$ 150/noite",
+    priceFrom: "a partir de R$ 160 por pessoa",
     whatsappMessage:
-      "Olá! Gostaria de saber mais sobre o Loft Jardim e verificar disponibilidade.",
+      "Olá! Gostaria de saber mais sobre a Suíte Aurora e verificar disponibilidade.",
     gridSpan: "medium",
   },
   {
-    slug: "chale-familiar",
+    slug: "quarto-jardim",
     type: "quarto",
-    name: "Chalé Familiar",
-    shortDescription: "Espaço generoso para a família toda, com sala compartilhada e varanda ampla.",
-    longDescription:
-      "O Chalé Familiar tem dois quartos, sala compartilhada e uma varanda grande o suficiente pra reunir a família depois de um dia de cachoeira. É o espaço da casa feito pra criar memória — com direito a rede, mesa grande e muito espaço pras crianças correrem.",
-    capacity: "Até 6 pessoas",
-    amenities: ["2 quartos", "Sala compartilhada", "Varanda ampla", "Rede", "Wi-Fi"],
+    name: "Quarto Jardim",
+    shortDescription:
+      "Cama de casal e duas camas de solteiro, com banheiro externo, no cantinho mais simples da casa.",
+    longDescription: `O Quarto Jardim tem uma cama de casal e duas camas de solteiro, com banheiro externo (não privativo) — opção mais simples e em conta da casa. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    capacity: "Até 4 pessoas",
+    amenities: [
+      "1 cama de casal + 2 camas de solteiro",
+      "Banheiro externo",
+      "Ventilador de teto",
+      "Café da manhã incluso",
+      "Wi-Fi",
+    ],
     images: [],
-    priceFrom: "a partir de R$ 380/noite",
+    priceFrom: "a partir de R$ 160 por pessoa",
     whatsappMessage:
-      "Olá! Gostaria de saber mais sobre o Chalé Familiar e verificar disponibilidade.",
-    gridSpan: "large",
+      "Olá! Gostaria de saber mais sobre o Quarto Jardim e verificar disponibilidade.",
+    gridSpan: "medium",
+  },
+  {
+    slug: "suite-mirante",
+    type: "quarto",
+    name: "Suíte Mirante",
+    shortDescription:
+      "Cama de casal e duas camas de solteiro, com banheiro privativo — ótima para grupos maiores.",
+    longDescription: `A Suíte Mirante tem uma cama de casal e duas camas de solteiro, com banheiro privativo — ótima para grupos maiores ou famílias com crianças. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    capacity: "Até 4 pessoas",
+    amenities: [
+      "1 cama de casal + 2 camas de solteiro",
+      "Banheiro privativo",
+      "Ventilador de teto",
+      "Café da manhã incluso",
+      "Wi-Fi",
+    ],
+    images: [],
+    priceFrom: "a partir de R$ 160 por pessoa",
+    whatsappMessage:
+      "Olá! Gostaria de saber mais sobre a Suíte Mirante e verificar disponibilidade.",
+    gridSpan: "medium",
+  },
+  {
+    slug: "suite-horizonte",
+    type: "quarto",
+    name: "Suíte Horizonte",
+    shortDescription:
+      "Cama de casal e cama de solteiro, com banheiro privativo, num quartinho tranquilo da casa.",
+    longDescription: `A Suíte Horizonte tem uma cama de casal e uma cama de solteiro, com banheiro privativo — um cantinho tranquilo para casais ou pequenos grupos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    capacity: "Até 3 pessoas",
+    amenities: [
+      "1 cama de casal + 1 cama de solteiro",
+      "Banheiro privativo",
+      "Ventilador de teto",
+      "Café da manhã incluso",
+      "Wi-Fi",
+    ],
+    images: [],
+    priceFrom: "a partir de R$ 160 por pessoa",
+    whatsappMessage:
+      "Olá! Gostaria de saber mais sobre a Suíte Horizonte e verificar disponibilidade.",
+    gridSpan: "medium",
+  },
+  {
+    slug: "suite-cerrado",
+    type: "quarto",
+    name: "Suíte Cerrado",
+    shortDescription:
+      "Cama de casal e cama de solteiro, com banheiro privativo, com toques do Cerrado tocantinense.",
+    longDescription: `A Suíte Cerrado tem uma cama de casal e uma cama de solteiro, com banheiro privativo e detalhes que remetem à vegetação da região. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    capacity: "Até 3 pessoas",
+    amenities: [
+      "1 cama de casal + 1 cama de solteiro",
+      "Banheiro privativo",
+      "Ventilador de teto",
+      "Café da manhã incluso",
+      "Wi-Fi",
+    ],
+    images: [],
+    priceFrom: "a partir de R$ 160 por pessoa",
+    whatsappMessage:
+      "Olá! Gostaria de saber mais sobre a Suíte Cerrado e verificar disponibilidade.",
+    gridSpan: "medium",
   },
   {
     slug: "camping",
     type: "camping",
     name: "Camping",
-    shortDescription: "Área verde reservada para barracas, debaixo das árvores do quintal da pousada.",
-    longDescription:
-      "Pra quem prefere dormir mais perto do céu, a Pousada Dona Maria reserva uma área de camping na sombra das árvores do quintal. Banheiro compartilhado, ponto de luz e a mesma hospitalidade da casa — incluindo o café da manhã da Dona Maria, se quiser.",
+    shortDescription:
+      "Área verde reservada para barracas, debaixo das árvores do quintal da pousada. Traga sua própria barraca.",
+    longDescription: `Pra quem prefere dormir mais perto do céu, a Pousada Dona Maria reserva uma área de camping na sombra das árvores do quintal. É necessário trazer sua própria barraca. A diária custa R$ 90,00 por pessoa. ${POLICY_NOTE}`,
     capacity: "Até 4 barracas",
-    amenities: ["Área gramada e sombreada", "Banheiro compartilhado", "Ponto de energia", "Fogueira (sob consulta)"],
+    amenities: [
+      "Área grande e sombreada",
+      "Banheiro compartilhado",
+      "Ponto de energia",
+      "Café da manhã incluso",
+      "Traga sua própria barraca",
+    ],
     images: [],
-    priceFrom: "a partir de R$ 40/pessoa por noite",
+    priceFrom: "a partir de R$ 90 por pessoa",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre o Camping e verificar disponibilidade.",
     gridSpan: "large",

@@ -22,8 +22,8 @@ export default function Hero() {
           Sinta o aconchego da nossa terra.
         </h1>
         <p className="font-body-lg text-body-lg text-secondary-container mb-10 max-w-2xl mx-auto">
-          Hospitalidade, tempero de casa e as cachoeiras mais bonitas do
-          distrito — bem-vindo à Pousada Dona Maria.
+          Hospitalidade, tempero de casa e as cachoeiras mais bonitas da
+          região — bem-vindo à Pousada Dona Maria.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <WhatsAppButton message={HERO_MESSAGE} variant="primary" className="bg-surface !text-primary hover:!bg-surface-container-low">
