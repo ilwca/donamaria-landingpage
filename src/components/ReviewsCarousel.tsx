@@ -27,7 +27,10 @@ export default function ReviewsCarousel({ reviews }: { reviews: Testimonial[] })
   const scrollToIndex = (index: number) => {
     const track = trackRef.current;
     const slide = track?.children[index] as HTMLElement | undefined;
-    slide?.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+    if (!track || !slide) return;
+    // Scroll only the carousel's own horizontal axis (not slide.scrollIntoView,
+    // which can also drag the page's vertical scroll on mobile browsers).
+    track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: "smooth" });
   };
 
   useEffect(() => {

@@ -27,8 +27,8 @@ export const accommodations: Accommodation[] = [
     type: "quarto",
     name: "Suíte Master",
     shortDescription:
-      "Cama de casal e cama de solteiro em banheiro privativo, para quem busca mais privacidade.",
-    longDescription: `A Suíte Master traz uma cama de casal e uma cama de solteiro, com banheiro privativo — boa opção para casais ou pequenos grupos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+      "Cama de casal e cama de solteiro e banheiro privativo, para quem busca mais privacidade.",
+    longDescription: `A Suíte Master traz uma cama de casal e uma cama de solteiro, com ar-condicionado e banheiro privativo — boa opção para casais ou pequenos grupos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
     capacity: "Até 3 pessoas",
     amenities: [
       "1 cama de casal + 1 cama de solteiro",
@@ -54,7 +54,7 @@ export const accommodations: Accommodation[] = [
     name: "Suíte Aurora",
     shortDescription:
       "Cama de casal e duas camas de solteiro, com banheiro privativo — espaço de sobra para a família.",
-    longDescription: `A Suíte Aurora tem uma cama de casal e duas camas de solteiro, com banheiro privativo — cabe bem famílias ou grupos de amigos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    longDescription: `A Suíte Aurora tem uma cama de casal e duas camas de solteiro com ventilador, ar-condicionado e banheiro privativo — cabe bem famílias ou grupos de amigos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
     capacity: "Até 4 pessoas",
     amenities: [
       "1 cama de casal + 2 camas de solteiro",
@@ -80,7 +80,7 @@ export const accommodations: Accommodation[] = [
     name: "Quarto Jardim",
     shortDescription:
       "Cama de casal e duas camas de solteiro, com banheiro externo, no cantinho mais simples da casa.",
-    longDescription: `O Quarto Jardim tem uma cama de casal e duas camas de solteiro, com banheiro externo (não privativo) — opção mais simples e em conta da casa. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
+    longDescription: `O Quarto Jardim tem uma cama de casal e duas camas de solteiro com ventilador, ar-condicionado e banheiro externo (não privativo) — opção mais simples e em conta da casa. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
     capacity: "Até 4 pessoas",
     amenities: [
       "1 cama de casal + 2 camas de solteiro",
@@ -105,8 +105,8 @@ export const accommodations: Accommodation[] = [
     name: "Camping",
     shortDescription:
       "Área verde reservada para barracas, debaixo das árvores do quintal da pousada. Traga sua própria barraca.",
-    longDescription: `Pra quem prefere dormir mais perto do céu, a Pousada Dona Maria reserva uma área de camping na sombra das árvores do quintal. É necessário trazer sua própria barraca. A diária custa R$ 90,00 por pessoa. ${POLICY_NOTE}`,
-    capacity: "Até 4 barracas",
+    longDescription: `Pra quem prefere dormir mais perto do céu, a Pousada Dona Maria reserva uma área de camping na sombra das árvores do quintal, com acesso a wi-fi e banheiro. É necessário trazer sua própria barraca. A diária custa R$ 90,00 por pessoa. ${POLICY_NOTE}`,
+    capacity: "Até 8 barracas",
     amenities: [
       "Área grande e sombreada",
       "Banheiro compartilhado",
