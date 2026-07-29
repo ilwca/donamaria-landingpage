@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import WhatsAppButton from "./WhatsAppButton";
+import HeroBackground from "./HeroBackground";
 
 const HERO_MESSAGE =
   "Olá! Gostaria de reservar uma estadia na Pousada Dona Maria.";
@@ -7,13 +8,7 @@ const HERO_MESSAGE =
 export default function Hero() {
   return (
     <section className="relative min-h-[92vh] w-full flex items-center justify-center overflow-hidden bg-primary">
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 20%, rgba(149,213,159,0.25), transparent 55%), radial-gradient(circle at 80% 80%, rgba(217,197,160,0.18), transparent 50%), linear-gradient(160deg, #0e4322 0%, #115128 45%, #1c3f26 100%)",
-        }}
-      />
+      <HeroBackground />
       <div className="relative z-10 text-center px-margin-mobile max-w-4xl py-32">
         <p className="font-label-lg text-label-lg text-tertiary-fixed uppercase tracking-[0.3em] mb-6">
           Interior do Tocantins
