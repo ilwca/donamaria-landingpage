@@ -1,4 +1,4 @@
-const DEFAULT_NUMBER = "556398444-8039"; // placeholder — trocar em NEXT_PUBLIC_WHATSAPP_NUMBER
+const DEFAULT_NUMBER = "5563984448039"; // placeholder — trocar em NEXT_PUBLIC_WHATSAPP_NUMBER
 
 export function getWhatsAppNumber(): string {
   return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || DEFAULT_NUMBER;
