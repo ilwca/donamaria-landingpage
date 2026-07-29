@@ -37,7 +37,12 @@ export const accommodations: Accommodation[] = [
       "Café da manhã incluso",
       "Wi-Fi",
     ],
-    images: [],
+    images: [
+      "/images/quartos/suite-master/suite-master.jpeg",
+      "/images/quartos/suite-master/suite-master-2.jpeg",
+      "/images/quartos/suite-master/suite-master-3.jpeg",
+      "/images/quartos/suite-master/suite-master-4.jpeg",
+    ],
     priceFrom: "a partir de R$ 160 por pessoa",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre a Suíte Master e verificar disponibilidade.",
@@ -58,7 +63,12 @@ export const accommodations: Accommodation[] = [
       "Café da manhã incluso",
       "Wi-Fi",
     ],
-    images: [],
+    images: [
+      "/images/quartos/suite-aurora/suite-aurora-1.jpeg",
+      "/images/quartos/suite-aurora/suite-aurora-2.jpeg",
+      "/images/quartos/suite-aurora/suite-aurora-3.jpeg",
+      "/images/quartos/suite-aurora/suite-aurora-4.jpeg",
+    ],
     priceFrom: "a partir de R$ 160 por pessoa",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre a Suíte Aurora e verificar disponibilidade.",
@@ -79,73 +89,14 @@ export const accommodations: Accommodation[] = [
       "Café da manhã incluso",
       "Wi-Fi",
     ],
-    images: [],
+    images: [
+      "/images/quartos/quarto-jardim/quarto-jardim-1.jpeg",
+      "/images/quartos/quarto-jardim/quarto-jardim-2.jpeg",
+      "/images/quartos/quarto-jardim/quarto-jardim-3.jpeg",
+    ],
     priceFrom: "a partir de R$ 160 por pessoa",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre o Quarto Jardim e verificar disponibilidade.",
-    gridSpan: "medium",
-  },
-  {
-    slug: "suite-mirante",
-    type: "quarto",
-    name: "Suíte Mirante",
-    shortDescription:
-      "Cama de casal e duas camas de solteiro, com banheiro privativo — ótima para grupos maiores.",
-    longDescription: `A Suíte Mirante tem uma cama de casal e duas camas de solteiro, com banheiro privativo — ótima para grupos maiores ou famílias com crianças. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
-    capacity: "Até 4 pessoas",
-    amenities: [
-      "1 cama de casal + 2 camas de solteiro",
-      "Banheiro privativo",
-      "Ventilador de teto",
-      "Café da manhã incluso",
-      "Wi-Fi",
-    ],
-    images: [],
-    priceFrom: "a partir de R$ 160 por pessoa",
-    whatsappMessage:
-      "Olá! Gostaria de saber mais sobre a Suíte Mirante e verificar disponibilidade.",
-    gridSpan: "medium",
-  },
-  {
-    slug: "suite-horizonte",
-    type: "quarto",
-    name: "Suíte Horizonte",
-    shortDescription:
-      "Cama de casal e cama de solteiro, com banheiro privativo, num quartinho tranquilo da casa.",
-    longDescription: `A Suíte Horizonte tem uma cama de casal e uma cama de solteiro, com banheiro privativo — um cantinho tranquilo para casais ou pequenos grupos. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
-    capacity: "Até 3 pessoas",
-    amenities: [
-      "1 cama de casal + 1 cama de solteiro",
-      "Banheiro privativo",
-      "Ventilador de teto",
-      "Café da manhã incluso",
-      "Wi-Fi",
-    ],
-    images: [],
-    priceFrom: "a partir de R$ 160 por pessoa",
-    whatsappMessage:
-      "Olá! Gostaria de saber mais sobre a Suíte Horizonte e verificar disponibilidade.",
-    gridSpan: "medium",
-  },
-  {
-    slug: "suite-cerrado",
-    type: "quarto",
-    name: "Suíte Cerrado",
-    shortDescription:
-      "Cama de casal e cama de solteiro, com banheiro privativo, com toques do Cerrado tocantinense.",
-    longDescription: `A Suíte Cerrado tem uma cama de casal e uma cama de solteiro, com banheiro privativo e detalhes que remetem à vegetação da região. ${ROOM_PRICE_NOTE} ${POLICY_NOTE}`,
-    capacity: "Até 3 pessoas",
-    amenities: [
-      "1 cama de casal + 1 cama de solteiro",
-      "Banheiro privativo",
-      "Ventilador de teto",
-      "Café da manhã incluso",
-      "Wi-Fi",
-    ],
-    images: [],
-    priceFrom: "a partir de R$ 160 por pessoa",
-    whatsappMessage:
-      "Olá! Gostaria de saber mais sobre a Suíte Cerrado e verificar disponibilidade.",
     gridSpan: "medium",
   },
   {
@@ -163,7 +114,11 @@ export const accommodations: Accommodation[] = [
       "Café da manhã incluso",
       "Traga sua própria barraca",
     ],
-    images: [],
+    images: [
+      "/images/camping/camping-1.jpeg",
+      "/images/camping/camping-2.jpeg",
+      "/images/camping/camping-3.jpeg",
+    ],
     priceFrom: "a partir de R$ 90 por pessoa",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre o Camping e verificar disponibilidade.",

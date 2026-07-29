@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Accommodation } from "@/data/rooms";
 import ImagePlaceholder from "./ImagePlaceholder";
@@ -15,6 +16,7 @@ export default function RoomCard({
 }: Props) {
   const href =
     accommodation.type === "camping" ? "/camping" : `/quartos/${accommodation.slug}`;
+  const cover = accommodation.images[0];
 
   return (
     <Link
@@ -22,7 +24,17 @@ export default function RoomCard({
       className={`group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container block ${heightClassName} ${className}`}
     >
       <div className="w-full h-full transition-transform duration-700 group-hover:scale-105">
-        <ImagePlaceholder label={accommodation.name} />
+        {cover ? (
+          <Image
+            src={cover}
+            alt={accommodation.name}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+          />
+        ) : (
+          <ImagePlaceholder label={accommodation.name} />
+        )}
       </div>
       <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 bg-gradient-to-t from-primary/90 to-transparent text-surface">
         <h3 className="font-headline-sm text-headline-sm mb-2">{accommodation.name}</h3>

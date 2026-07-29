@@ -3,7 +3,7 @@ import { fallbackTestimonials, type Testimonial } from "@/data/testimonials";
 export type ReviewsResult = {
   source: "google" | "fallback";
   overallRating: number | null;
-  totalReviews: number | null;
+  totalReviews: number | null ;
   reviews: Testimonial[];
 };
 
