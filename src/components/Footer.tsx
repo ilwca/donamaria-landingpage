@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Instagram, Phone } from "lucide-react";
 import { buildWhatsAppLink, GENERIC_WHATSAPP_MESSAGE } from "@/lib/whatsapp";
 
 const footerLinks = [
@@ -8,8 +8,8 @@ const footerLinks = [
   { href: "/#localizacao", label: "Localização" },
 ];
 
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contato@pousadadonamaria.com.br";
-const phoneDisplay = process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY || "(63) 90000-0000";
+const instagram = "https://www.instagram.com/pousadadonamariaoderci/";
+const phoneDisplay = "(63) 98444-8039";
 
 export default function Footer() {
   return (
@@ -42,14 +42,14 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href={`mailto:${email}`}
+            href={`mailto:${instagram}`}
             aria-label="E-mail"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-primary hover:text-surface transition-all"
           >
-            <Mail className="w-5 h-5" strokeWidth={1.75} />
+            <Instagram className="w-5 h-5" strokeWidth={1.75} />
           </a>
           <a
-            href={`tel:${phoneDisplay.replace(/\D/g, "")}`}
+            href={buildWhatsAppLink(GENERIC_WHATSAPP_MESSAGE)}
             aria-label="Telefone"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-primary hover:text-surface transition-all"
           >
