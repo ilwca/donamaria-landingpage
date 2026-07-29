@@ -21,4 +21,11 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

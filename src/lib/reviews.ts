@@ -1,4 +1,9 @@
-import { fallbackTestimonials, type Testimonial } from "@/data/testimonials";
+import {
+  fallbackTestimonials,
+  FALLBACK_OVERALL_RATING,
+  FALLBACK_TOTAL_REVIEWS,
+  type Testimonial,
+} from "@/data/testimonials";
 
 export type ReviewsResult = {
   source: "google" | "fallback";
@@ -21,14 +26,11 @@ type GooglePlaceDetailsResponse = {
   status: string;
 };
 
-const AVERAGE_FALLBACK_RATING =
-  fallbackTestimonials.reduce((sum, t) => sum + t.rating, 0) / fallbackTestimonials.length;
-
 function fallbackResult(): ReviewsResult {
   return {
     source: "fallback",
-    overallRating: Number(AVERAGE_FALLBACK_RATING.toFixed(1)),
-    totalReviews: fallbackTestimonials.length,
+    overallRating: FALLBACK_OVERALL_RATING,
+    totalReviews: FALLBACK_TOTAL_REVIEWS,
     reviews: fallbackTestimonials,
   };
 }

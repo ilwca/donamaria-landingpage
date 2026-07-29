@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import { getReviews } from "@/lib/reviews";
 import Reveal from "./Reveal";
+import ReviewsCarousel from "./ReviewsCarousel";
 
 function Stars({ rating }: { rating: number }) {
   return (
@@ -28,15 +29,19 @@ export default async function ReviewsSection() {
           <div className="flex items-center justify-center gap-3 mb-2">
             <Stars rating={overallRating} />
             <span className="font-label-lg text-label-lg text-on-surface-variant">
-              {4.8}
-              {totalReviews ? ` · ${38} avaliações` : ""}
+              {overallRating}
+              {totalReviews ? ` · ${totalReviews} avaliações` : ""}
             </span>
           </div>
         )}
         <div className="w-24 h-px bg-tertiary-container mx-auto mt-8" />
       </Reveal>
 
-      <Reveal as="div" className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <Reveal as="div">
+        <ReviewsCarousel reviews={reviews} />
+      </Reveal>
+
+      <Reveal as="div" className="hidden md:grid md:grid-cols-3 gap-gutter">
         {reviews.slice(0, 6).map((review, i) => (
           <div
             key={`${review.author}-${i}`}

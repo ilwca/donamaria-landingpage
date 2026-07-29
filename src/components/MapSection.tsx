@@ -3,8 +3,8 @@ import Reveal from "./Reveal";
 
 // Coordenadas placeholder (Palmas, TO) até termos o endereço real da pousada.
 // Trocar via NEXT_PUBLIC_MAPS_LAT / NEXT_PUBLIC_MAPS_LNG / NEXT_PUBLIC_MAPS_ADDRESS.
-const lat = process.env.NEXT_PUBLIC_MAPS_LAT || "-13.1180755";
-const lng = process.env.NEXT_PUBLIC_MAPS_LNG || "-47.7679752";
+const lat = process.env.NEXT_PUBLIC_MAPS_LAT || "-13.119141103352018";
+const lng = process.env.NEXT_PUBLIC_MAPS_LNG || "-47.7661878588241";  
 const address =
   process.env.NEXT_PUBLIC_MAPS_ADDRESS ||
   "Campo Alegre, Paranã - TO, 77360-000";
