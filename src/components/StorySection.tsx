@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { Heart, CookingPot, Compass } from "lucide-react";
-import ImagePlaceholder from "./ImagePlaceholder";
 import Reveal from "./Reveal";
+import donaMariaPhoto from "../../public/images/dona-maria.jpeg";
 
 const highlights = [
   {
@@ -33,7 +34,8 @@ export default function StorySection() {
             quem chega em busca de sossego e das cachoeiras da região. O que
             começou como um jeito simples de receber visitas virou uma pousada
             conhecida pela hospitalidade e pelo tempero especial que só ela sabe
-            fazer.
+            fazer, e juntamente com sua irmã e companheira dona Miúda, cuidam de 
+            cada detalhe para que os hóspedes se sintam em casa.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-4">
             {highlights.map(({ icon: Icon, title, description }) => (
@@ -50,7 +52,14 @@ export default function StorySection() {
 
         <Reveal as="div" className="relative order-1 lg:order-2">
           <div className="aspect-square rounded-full overflow-hidden border-8 border-surface-container-low/20">
-            <ImagePlaceholder label="Foto da Dona Maria" />
+            <Image
+              src={donaMariaPhoto}
+              alt="Foto da Dona Maria"
+              fill
+              sizes="(min-width: 1024px) 50vw, 200vw"
+              className="object-cover rounded-full border-8 border-surface-container-low/20"
+              priority
+            />
           </div>
           <div className="absolute -bottom-6 -left-6 bg-tertiary-fixed text-on-tertiary-fixed p-8 rounded-lg hidden md:block">
             <p className="font-display-lg text-headline-lg italic">Maria</p>
