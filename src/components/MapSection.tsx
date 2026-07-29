@@ -3,11 +3,11 @@ import Reveal from "./Reveal";
 
 // Coordenadas placeholder (Palmas, TO) até termos o endereço real da pousada.
 // Trocar via NEXT_PUBLIC_MAPS_LAT / NEXT_PUBLIC_MAPS_LNG / NEXT_PUBLIC_MAPS_ADDRESS.
-const lat = process.env.NEXT_PUBLIC_MAPS_LAT || "-10.1689";
-const lng = process.env.NEXT_PUBLIC_MAPS_LNG || "-48.3317";
+const lat = process.env.NEXT_PUBLIC_MAPS_LAT || "-13.1180755";
+const lng = process.env.NEXT_PUBLIC_MAPS_LNG || "-47.7679752";
 const address =
   process.env.NEXT_PUBLIC_MAPS_ADDRESS ||
-  "Endereço a confirmar — distrito no interior do Tocantins";
+  "Campo Alegre, Paranã - TO, 77360-000";
 
 export default function MapSection() {
   const mapsUrl = `https://www.google.com/maps?q=${lat},${lng}`;
