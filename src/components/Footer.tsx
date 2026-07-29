@@ -42,8 +42,8 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href={`mailto:${instagram}`}
-            aria-label="E-mail"
+            href={`https://www.instagram.com/pousadadonamariaoderci/`}
+            aria-label="Instagram"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-primary hover:text-surface transition-all"
           >
             <Instagram className="w-5 h-5" strokeWidth={1.75} />
