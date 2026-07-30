@@ -54,7 +54,7 @@ export default function StorySection() {
           <div className="aspect-square rounded-full overflow-hidden border-8 border-surface-container-low/20">
             <Image
               src={donaMariaPhoto}
-              alt="Foto da Dona Maria"
+              alt="Dona Maria, anfitriã da Pousada Dona Maria em Campo Alegre, Paranã (TO)"
               fill
               sizes="(min-width: 1024px) 50vw, 200vw"
               className="object-cover rounded-full border-8 border-surface-container-low/20"

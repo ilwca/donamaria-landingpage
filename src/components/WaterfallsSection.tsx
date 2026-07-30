@@ -22,7 +22,7 @@ export default function WaterfallsSection() {
               {fall.image ? (
                 <Image
                   src={fall.image}
-                  alt={fall.name}
+                  alt={`${fall.name}, perto da Pousada Dona Maria em Campo Alegre, Paranã (TO)`}
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

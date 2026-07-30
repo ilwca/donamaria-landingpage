@@ -29,7 +29,7 @@ export default function RoomDetail({ accommodation }: { accommodation: Accommoda
             {mainImage ? (
               <Image
                 src={mainImage}
-                alt={accommodation.name}
+                alt={`${accommodation.name} — Pousada Dona Maria em Campo Alegre, Paranã (TO)`}
                 fill
                 sizes="(min-width: 768px) 66vw, 100vw"
                 priority

@@ -27,7 +27,7 @@ export default function RoomCard({
         {cover ? (
           <Image
             src={cover}
-            alt={accommodation.name}
+            alt={`${accommodation.name} — Pousada Dona Maria, Campo Alegre (TO)`}
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
